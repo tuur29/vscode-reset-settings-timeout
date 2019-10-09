@@ -10,14 +10,20 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
-			"command": "extension.helloWorld",
-			"title": "Hello World"
-		}]
+		"commands": [
+			{
+				"command": "reset-settings-timeout.resetNow",
+				"title": "Reset configured settings now"
+			},
+			{
+				"command": "reset-settings-timeout.restartTimer",
+				"title": "Restart settings reset timeout"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
