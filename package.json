@@ -14,6 +14,41 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"configuration": {
+			"title": "Reset Settings after Timeout",
+			"properties": {
+				"reset-settings-timeout.commands": {
+					"type": "array",
+					"default": [],
+					"description": "An array of commands to execute after timeout (see keybindings for commands)"
+				},
+				"reset-settings-timeout.settings": {
+					"type": "object",
+					"default": {},
+					"description": "A list of settings with the preferred 'default' value"
+				},
+				"reset-settings-timeout.timeout": {
+					"type": "number",
+					"default": 3600,
+					"description": "Timeout in seconds (less than 60 is never)"
+				},
+				"reset-settings-timeout.resetOnRestart": {
+					"type": "boolean",
+					"default": true,
+					"description": "Always reset settings when VSCode starts"
+				},
+				"reset-settings-timeout.notifyOfReset": {
+					"type": "boolean",
+					"default": false,
+					"description": "Show a message when a reset happens"
+				},
+				"reset-settings-timeout.debug": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enable debug mode"
+				}
+			}
+		},
 		"commands": [
 			{
 				"command": "reset-settings-timeout.resetNow",
@@ -39,8 +74,12 @@
 		"@types/vscode": "^1.38.0",
 		"glob": "^7.1.4",
 		"mocha": "^6.1.4",
+		"tslint": "^5.20.0",
 		"typescript": "^3.3.1",
-		"tslint": "^5.12.1",
 		"vscode-test": "^1.2.0"
+	},
+	"dependencies": {
+		"eslint": "^6.5.1",
+		"global": "^4.4.0"
 	}
 }
