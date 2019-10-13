@@ -3,6 +3,9 @@
 	"displayName": "Reset Settings after Timeout",
 	"description": "Resets a bunch of settings to a defined value after a timeout",
 	"version": "0.0.1",
+	"license": "GPL-3.0-only",
+	"publisher": "tuur29",
+	"repository": "https://github.com/tuur29/vscode-reset-settings-timeout",
 	"engines": {
 		"vscode": "^1.38.0"
 	},
@@ -76,10 +79,9 @@
 		"mocha": "^6.1.4",
 		"tslint": "^5.20.0",
 		"typescript": "^3.3.1",
-		"vscode-test": "^1.2.0"
-	},
-	"dependencies": {
+		"vscode-test": "^1.2.0",
 		"eslint": "^6.5.1",
-		"global": "^4.4.0"
+		"global": "^4.4.0",
+		"vsce": "^1.67.1"
 	}
 }
