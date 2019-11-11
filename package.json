@@ -2,7 +2,7 @@
 	"name": "reset-settings-timeout",
 	"displayName": "Reset Settings after Timeout",
 	"description": "Resets a bunch of settings to a defined value after a timeout",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"license": "GPL-3.0-only",
 	"publisher": "tuur29",
 	"repository": "https://github.com/tuur29/vscode-reset-settings-timeout",

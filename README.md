@@ -13,7 +13,7 @@ Possible use case: Automatically enabling your linter for when you forget to tur
 "reset-settings-timeout.commands": [],
 
 // A list of settings with the preferred 'default' value
-"reset-settings-timeout.settings": {}, // currently not supported yet!
+"reset-settings-timeout.settings": {},
 
 // Timeout in seconds (less than 60 is never)
 "reset-settings-timeout.timeout": 3600,
@@ -28,12 +28,12 @@ Possible use case: Automatically enabling your linter for when you forget to tur
 "reset-settings-timeout.debug": false,
 ```
 
-## Known Issues
-
-- Settings can't be reset yet, only executing commands works for now
-
 ## Release Notes
+
+### 0.0.2
+
+- Support for resetting configuration
 
 ### 0.0.1
 
-Initial release
+- Initial release
