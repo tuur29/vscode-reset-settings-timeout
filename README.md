@@ -37,3 +37,7 @@ Possible use case: Automatically enabling your linter for when you forget to tur
 ### 0.0.1
 
 - Initial release
+
+## Deploying
+
+Update version in `package.json`, the run `yarn vsce package` and upload the generated `.vsix` file to [the marketplace](https://marketplace.visualstudio.com/manage/publishers/).
