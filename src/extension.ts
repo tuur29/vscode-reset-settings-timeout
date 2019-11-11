@@ -71,7 +71,7 @@ function setupTimer() {
 
 	if (
 		(Object.entries(settings.settings).length > 0 || Object.entries(settings.commands).length) > 0
-		&& settings.timeout > 10 // TODO: change min timeout to 60
+		&& settings.timeout >= (settings.debug ? 5 : 60)
 	) {
 		debug("timer: start");
 		timer = setTimeout(() => {
