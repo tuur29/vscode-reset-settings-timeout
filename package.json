@@ -40,6 +40,11 @@
 					"default": true,
 					"description": "Always reset settings when VSCode starts"
 				},
+				"reset-settings-timeout.allowUserWorkspaceChanges": {
+					"type": "boolean",
+					"default": false,
+					"description": "Allow changing user configuration when current workspace doesn't contain settings.json file."
+				},
 				"reset-settings-timeout.notifyOfReset": {
 					"type": "boolean",
 					"default": false,
